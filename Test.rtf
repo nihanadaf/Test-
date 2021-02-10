@@ -1,0 +1,190 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red106\green62\blue62;\red0\green0\blue192;\red42\green0\blue255;\red63\green127\blue95;\red212\green212\blue212;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\par
+Question 1 : \par
+\cf1\b\f1\fs20 import\cf2\b0  java.util.Scanner;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  PersonAge\cf0\par
+\cf2\{\cf0\par
+\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 )\cf0\par
+\cf2\{\cf0\par
+\cf1\b int\cf2\b0  \cf3 n\cf2 ;\cf0\par
+\cf1\b int\cf2\b0  \cf3 count\cf2 =0;\cf0\par
+\cf1\b int\cf2\b0  \cf3 count1\cf2 =0;\cf0\par
+\cf1\b int\cf2\b0  \cf3 count2\cf2 =0;\cf0\par
+\cf2 Scanner \cf3\ul sc\cf2\ulnone =\cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2 System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Enter the no. of inputs: "\cf2 );\cf0\par
+\par
+\cf3 n\cf2 =\cf3 sc\cf2 .nextInt();\cf0\par
+\par
+\cf1\b int\cf2\b0 [] \cf3 array\cf2  = \cf1\b new\cf2\b0  \cf1\b int\cf2\b0 [10];\cf0\par
+\cf2 System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Enter the persons age: "\cf2 );\cf0\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0; \cf3 i\cf2 <\cf3 n\cf2 ; \cf3 i\cf2 ++)\cf0\par
+\cf2\{\cf0\par
+\cf3 array\cf2 [\cf3 i\cf2 ]=\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\}\cf0\par
+\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0; \cf3 i\cf2 <\cf3 n\cf2 ; \cf3 i\cf2 ++)\cf0\par
+\cf2\{\cf0\par
+\cf2  \cf1\b if\cf2\b0 (\cf3 array\cf2 [\cf3 i\cf2 ]<18)\cf0\par
+\cf2  \cf3 count\cf2 ++;\cf0\par
+\cf2  \cf1\b if\cf2\b0 (\cf3 array\cf2 [\cf3 i\cf2 ]>=18 && \cf3 array\cf2 [\cf3 i\cf2 ]<=54)\cf0\par
+\cf2  \cf3 count1\cf2 ++;\cf0\par
+\cf2  \cf1\b if\cf2\b0 (\cf3 array\cf2 [\cf3 i\cf2 ]>=55)\cf0\par
+\cf2  \cf3 count2\cf2 ++;\cf0\par
+\cf2\}\cf0\par
+\cf2  System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Children: "\cf2 +\cf3 count\cf2 );\cf0\par
+\cf2  System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Adult: "\cf2 +\cf3 count1\cf2 );\cf0\par
+\cf2  System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Senior Citizen: "\cf2 +\cf3 count2\cf2 );\cf0\par
+\par
+\cf2\}\cf0\par
+\cf2\}\cf0\f0\fs22\par
+\par
+\par
+Question 2 : \par
+\cf1\b\f1\fs20 package\cf2\b0  assignment4;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Employee \{\cf0\par
+\par
+\cf2\tab\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab String \cf4 firstname\cf2 ;\cf0\par
+\cf2\tab\tab\tab String \cf4 lastname\cf2 ;\cf0\par
+\cf2\tab\tab\tab Employee(\cf1\b int\cf2\b0  \cf3 id\cf2 , String \cf3 firstname\cf2 , String \cf3 lastname\cf2 )\{\cf0\par
+\cf2\tab\tab\tab\cf1\b this\cf2\b0 .\cf4 firstname\cf2 =\cf3 firstname\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf1\b this\cf2\b0 .\cf4 lastname\cf2 =\cf3 lastname\cf2 ;\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b public\cf2\b0  String toString()\{\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf1\b return\cf2\b0  \cf4 firstname\cf2 +\cf5 " "\cf2 +\cf4 lastname\cf2 +\cf5 " "\cf2 ;\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf3 args\cf2 [])\{\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab Employee \cf3 e1\cf2 =\cf1\b new\cf2\b0  Employee(01,\cf5 "Anaya"\cf2 ,\cf5 "Mishra"\cf2 );\cf0\par
+\cf2\tab\tab\tab Employee \cf3 e2\cf2 =\cf1\b new\cf2\b0  Employee(02,\cf5 "Niti"\cf2 ,\cf5 "Taylor"\cf2 );\cf0\par
+\cf2\tab\tab\tab Employee \cf3 e3\cf2 =\cf1\b new\cf2\b0  Employee(02,\cf5 "Sweety"\cf2 ,\cf5 "sood"\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e1\cf2 );\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e2\cf2 );\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e3\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\cf0\par
+\f0\fs22\par
+\par
+\par
+Question 3 : \par
+\cf1\b\f1\fs20 package\cf2\b0  assignment4;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  EmployeeNew \{\cf0\par
+\par
+\par
+\cf1\b static\cf2\b0  String \cf4\i firstname\cf2\i0 ;\cf0\par
+\cf1\b static\cf2\b0  String \cf4\i lastname\cf2\i0 ;\cf0\par
+\par
+\par
+\par
+\cf1\b public\cf2\b0  EmployeeNew(String \cf3 firstname\cf2 , String \cf3 lastname\cf2 ) \{\cf0\par
+\cf1\b super\cf2\b0 ();\cf0\par
+\cf1\b this\cf2\b0 .\cf4\ul\i firstname\cf2\ulnone\i0  = \cf3 firstname\cf2 ;\cf0\par
+\cf1\b this\cf2\b0 .\cf4\ul\i lastname\cf2\ulnone\i0  = \cf3 lastname\cf2 ;\cf0\par
+\cf2\}\cf0\par
+\par
+\par
+\cf1\b public\cf2\b0  String toString()\{\cf6 //overriding the toString() method\cf0\par
+\cf1\b return\cf2\b0  \cf4\i firstname\cf2\i0 +\cf5 " "\cf2 +\cf4\i lastname\cf2\i0 +\cf5 " "\cf2 ;\cf0\par
+\par
+\cf2      \}\cf0\par
+\par
+\par
+\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf3 args\cf2 [])\{\cf0\par
+\par
+\cf2 EmployeeNew \cf3 e1\cf2 =\cf1\b new\cf2\b0  EmployeeNew(\cf5 "Aaaa"\cf2 ,\cf5 "baaaa"\cf2 );\cf0\par
+\cf2 EmployeeNew \cf3 e2\cf2 =\cf1\b new\cf2\b0  EmployeeNew(\cf5 "caaa"\cf2 ,\cf5 "daaaa"\cf2 );\cf0\par
+\cf2 EmployeeNew \cf3 e3\cf2 =\cf1\b new\cf2\b0  EmployeeNew(\cf5 "eeeee"\cf2 ,\cf5 " "\cf2 );\cf0\par
+\par
+\cf2 System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e1\cf2 );\cf0\par
+\cf2 System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e2\cf2 );\cf0\par
+\cf2 System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e3\cf2 );\cf0\par
+\par
+\par
+\par
+\par
+\cf1\b try\cf2\b0  \{\cf0\par
+\cf2   \cf1\b if\cf2\b0  (\cf4\i firstname\cf2\i0  == \cf5 " "\cf2 )\cf0\par
+\cf2   System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Entry Missing"\cf2 );\cf0\par
+\cf2  \} \cf1\b catch\cf2\b0  (Exception \cf3 e\cf2 ) \{\cf0\par
+\cf2   System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "In try1 = "\cf2  + \cf3 e\cf2 );\cf0\par
+\cf2  \}\cf0\par
+\par
+\cf1\b try\cf2\b0  \{\cf0\par
+\cf2   \cf1\b if\cf2\b0 (\cf4\i lastname\cf2\i0  == \cf5 " "\cf2 )\cf0\par
+\cf2   System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Entry Missing"\cf2 );\par
+\par
+\par
+\f2\lang1033 Question 4 : \par
+\par
+\cf1\b\f1 public\cf2\b0  \cf1\b class\cf2\b0  Animal \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  sound()\{\cf0\par
+\cf2\tab       System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Animal is making a sound"\cf2 );  \cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\}\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  \highlight7 Cat\highlight0  \cf1\b extends\cf2\b0  Animal\{\cf0\par
+\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  sound() \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\tab\cf1\b super\cf2\b0 .sound();\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Meow-Meow"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf3 args\cf2 [])\{\cf0\par
+\cf2     \tab Animal \cf3 obj\cf2  = \cf1\b new\cf2\b0  \highlight7 Cat\highlight0 ();\cf0\par
+\cf2     \tab\cf3 obj\cf2 .sound();\cf0\par
+\cf2     \}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf0\par
+\par
+\cf2\}\cf0\par
+\f0\fs22\lang9\par
+\par
+\cf1\b\f1\fs20 public\cf2\b0  \cf1\b class\cf2\b0  \highlight7 Dog\highlight0  \cf1\b extends\cf2\b0  Animal\{\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  sound() \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b super\cf2\b0 .sound();\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Bow-Bow"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf3 args\cf2 [])\{\cf0\par
+\cf2     \tab Animal \cf3 obj\cf2  = \cf1\b new\cf2\b0  \highlight7 Dog\highlight0 ();\cf0\par
+\cf2     \tab\cf3 obj\cf2 .sound();\cf0\par
+\cf2     \}\cf0\par
+\cf2\}\cf0\par
+\f0\fs22\par
+\par
+\cf1\b\f1\fs20 public\cf2\b0  \cf1\b class\cf2\b0  Horse \cf1\b extends\cf2\b0  Animal \{\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  sound() \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\tab\cf1\b super\cf2\b0 .sound();\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Neigh-Neigh"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf3 args\cf2 [])\{\cf0\par
+\cf2     \tab Animal \cf3 obj\cf2  = \cf1\b new\cf2\b0  Horse();\cf0\par
+\cf2     \tab\cf3 obj\cf2 .sound();\cf0\par
+\cf2     \}\cf0\par
+\par
+\cf2\tab\cf0\par
+\cf2\}\cf0\par
+\f0\fs22\par
+}
+ 
